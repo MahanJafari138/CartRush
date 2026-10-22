@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Here Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- I added these fonts from the website. https://fonts.google.com/ -->
+
+    <link rel="stylesheet" href="assets/css/all-code.css">
+
+    <title>CartRush</title>
+  </head>
+  <body>
+    <!-- nav -->
+    <div class="container">
+      <nav class="search-container">
+        <div class="category-container">
+          <a class="text-nav" href="index.html">Home</a>
+          <a class="text-nav" href="Aboutme.html"> About Me </a>
+          <a class="text-nav-active" href="Games.html">Games</a>
+        </div>
+
+        <div class="search-flex">
+          <input
+            class="input-style"
+            id="searchInput"
+            type="search"
+            placeholder="Search Your Game"
+          />
+          <img class="icon-search" src="assets/icon/icons8-search.svg" alt="" />
+        </div>
+
+        <a href="ShoppingCart.html">
+          <div class="shopping-container">
+            <img
+              class="icon-shopping"
+              src="assets/icon/icons8-shopping-cart-50.png"
+              alt=""
+            />
+
+            <span class="Number-value-List" id="productQuantity">0</span>
+          </div>
+        </a>
+      </nav>
+      <!-- nav finish -->
+
+      <!-- cartGame & mainShop -->
+      <div class="main-shop">
+        <div class="shop-container-off" id="searchBox">
+          <a class="title-shop" href="" id="resultText"></a>
+
+          <div class="cart-shop">
+            <div class="cart-container" id="cardBox"></div>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <a class="title-shop" href=""><h2>All Game</h2></a>
+
+          <div class="cart-shop">
+            <div class="cart-container">
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/ERA ONE.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> ERA ONE </span>
+                  <div class="row-text">
+                    <span class="text-off"> $76 </span>
+
+                    <span class="basePrice"> $57 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/No Man Can Deny.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> No Man Can Deny </span>
+                  <div class="row-text">
+                    <span class="text-off"> $80 </span>
+
+                    <span class="basePrice"> $36 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/BlazePunk.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> BlazePunk </span>
+                  <div class="row-text">
+                    <span class="text-off"> $90 </span>
+
+                    <span class="basePrice"> $46 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/BAKUDO.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> BAKUDO </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $80 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/BoB - Battle of Bots.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> BoB - Battle of Bots </span>
+                  <div class="row-text">
+                    <span class="text-off"> $81 </span>
+
+                    <span class="basePrice"> $43 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Cats In The Shell.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Cats In The Shell </span>
+                  <div class="row-text">
+                    <span class="text-off"> $27 </span>
+
+                    <span class="basePrice"> $10 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Climber Animals Together.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Climber Animals Together
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $83</span>
+
+                    <span class="basePrice"> $20 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Go Slimey Go!.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Go Slimey Go! </span>
+                  <div class="row-text">
+                    <span class="text-off"> $20 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Grandma(88).webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Grandma(88) </span>
+                  <div class="row-text">
+                    <span class="text-off"> $39 </span>
+
+                    <span class="basePrice"> $11 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Production City.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Production City </span>
+                  <div class="row-text">
+                    <span class="text-off"> $66 </span>
+
+                    <span class="basePrice"> $55 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Outbound.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Outbound </span>
+                  <div class="row-text">
+                    <span class="text-off"> $88 </span>
+
+                    <span class="basePrice"> $40 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/SOKO 1977 Anti-Terror Task Force.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    SOKO 1977 Anti-Terror Task Force
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $77 </span>
+
+                    <span class="basePrice"> $40 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Nintendo Switch Sports Resort.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Nintendo Switch Sports Resort
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $63 </span>
+
+                    <span class="basePrice"> $51 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Forza Horizon 6.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Forza Horizon 6 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $90 </span>
+
+                    <span class="basePrice"> $80 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Rayman Legends Retold.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Rayman Legends Retold </span>
+                  <div class="row-text">
+                    <span class="text-off"> $110 </span>
+
+                    <span class="basePrice"> $79 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Genshin Impact.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Genshin Impact </span>
+                  <div class="row-text">
+                    <span class="text-off"> $80 </span>
+
+                    <span class="basePrice"> $39 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/The Blood of Dawnwalker.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    The Blood of Dawnwalker
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $110 </span>
+
+                    <span class="basePrice"> $100 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Mega Man Dual Override.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Mega Man: Dual Override
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $27 </span>
+
+                    <span class="basePrice"> $20 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Dragon's Dogma 2 Dark Arisen.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Dragon's Dogma 2: Dark Arisen
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $187 </span>
+
+                    <span class="basePrice"> $120 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Castlevania Belmont's Curse.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Castlevania: Belmont's Curse
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $30 </span>
+
+                    <span class="basePrice"> $15 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Honkai Nexus Anima.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Honkai: Nexus Anima </span>
+                  <div class="row-text">
+                    <span class="text-off"> $67 </span>
+
+                    <span class="basePrice"> $40 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Indie Arena Booth.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Indie Arena Booth </span>
+                  <div class="row-text">
+                    <span class="text-off"> $17 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/ANANTA.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> ANANTA </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/PUBG DED.NET.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> PUBG: DED.NET </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/AION 2.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> AION 2 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Project ZETA.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Project ZETA </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Arknights Endfield.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Arknights: Endfield </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $80 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/1001 Threads of Mizan.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> 1001 Threads of Mizan </span>
+                  <div class="row-text">
+                    <span class="text-off"> $130 </span>
+
+                    <span class="basePrice"> $97 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Tides of Annihilation.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Tides of Annihilation </span>
+                  <div class="row-text">
+                    <span class="text-off"> $70 </span>
+
+                    <span class="basePrice"> $57 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Where Winds Meet.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Where Winds Meet </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $40 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/NO LAW.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> NO LAW </span>
+                  <div class="row-text">
+                    <span class="text-off"> $80 </span>
+
+                    <span class="basePrice"> $45 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Path of Exile 2.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Path of Exile 2 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $87 </span>
+
+                    <span class="basePrice"> $40 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/HITMAN World of Assassination.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    HITMAN World of Assassination
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $200 </span>
+
+                    <span class="basePrice"> $190 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/MOTU Skeletor Until Next Time.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    MOTU Skeletor: Until Next Time
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-all/Arena of Valor.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Arena of Valor </span>
+                  <div class="row-text">
+                    <span class="text-off"> $0 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- finish -->
+
+    </div>
+
+    <!-- scrit -->
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/searchvalue.js"></script>
+    <script src="assets/js/ShopList.js"></script>
+    <!-- /script -->
+  </body>
+</html>

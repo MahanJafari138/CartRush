@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- I added these fonts from the website. https://fonts.google.com/ -->
+
+    <link rel="stylesheet" href="assets/css/all-code.css" />
+
+    <title>CartRush</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <nav class="search-container">
+        <div class="category-container">
+          <a class="text-nav" href="index.html">Home</a>
+          <a class="text-nav-active" href="Aboutme.html"> About Me </a>
+          <a class="text-nav" href="Games.html">Games</a>
+        </div>
+
+        <div class="search-flex">
+          <input
+            class="input-style"
+            type="search"
+            placeholder="Search Your Game"
+          />
+          <img class="icon-search" src="assets/icon/icons8-search.svg" alt="" />
+        </div>
+
+        <a href="ShoppingCart.html">
+          <div class="shopping-container">
+            <img
+              class="icon-shopping"
+              src="assets/icon/icons8-shopping-cart-50.png"
+              alt=""
+            />
+
+            <span class="Number-value-List" id="productQuantity">0</span>
+          </div>
+        </a>
+      </nav>
+      <!-- nav finish -->
+
+      <!-- main-self -->
+        <div class="main-self">
+          <div class="about-self">
+            <span class="title-self"> About Me </span>
+
+            <span class="Description-self">
+              Hi, I'm Mahan — a self-taught, project-based learner on the path
+              to becoming a full-stack web developer. Rather than working
+              through theory-heavy courses, I chose to learn by building real,
+              functional projects from day one, and that approach has shaped how
+              I understand every concept I pick up. My journey started from the
+              absolute fundamentals of JavaScript and gradually moved into more
+              advanced territory: DOM manipulation, array methods, asynchronous
+              programming with Promises and Async/Await, classes, modules,
+              LocalStorage, and regular expressions. Each concept wasn't just
+              studied — it was immediately put to use in something I built
+              myself, which meant debugging real problems, not textbook
+              exercises. So far, I've completed several full projects on my own:
+              A task and habit management app — built with vanilla HTML, CSS,
+              and JavaScript, featuring input validation, dynamic
+              categorization, persistent data storage with LocalStorage, and a
+              fully responsive design across multiple breakpoints. A live movie
+              and TV search application — connected to a real external API
+              (OMDB), with live search handling race conditions, a recent-search
+              history feature, hover interactions, and a glassmorphism video
+              background design. An expense tracker with a custom donut chart —
+              built entirely with CSS conic-gradient (no charting libraries),
+              handling income, expenses, and running balance with a clean,
+              color-coded transaction list. An in-progress online game store —
+              currently building out an interactive image slider with autoplay
+              and manual controls, dynamic product cards with clip-path based
+              layouts, and hover-reveal overlays across dozens of product
+              entries. Beyond just writing code, I care a lot about interface
+              design — color, spacing, interaction states, and making things
+              feel polished rather than just functional. I also make a habit of
+              pushing each project a little further than what's strictly
+              required, because that's usually where the real learning happens:
+              debugging the unexpected, not the expected.
+            </span>
+          </div>
+
+          <div class="self-Introduction">
+            <div class="div-boxconic">
+              <img
+                class="img-self"
+                src="assets/img/IMG_20260620_141315_494.jpg"
+                alt=""
+              />
+              <div class="conic-absolute"></div>
+            </div>
+
+            <span class="name-self"> Mahan Jafari </span>
+          </div>
+
+          <div class="about-self">
+            <span class="title-self"> Vision for the Future </span>
+
+            <span class="Description-self">
+              My long-term goal is to reach a level where I can take an idea
+              from a blank page to a real, usable product — entirely on my own,
+              without needing to lean on anyone else to fill in the gaps. That's
+              not about working in isolation; it's about building enough depth
+              and independence that I can own a project end-to-end, make sound
+              decisions about how to build it, and actually ship it. Right now,
+              I'm focused on solidifying the fundamentals I've built so far —
+              not rushing past them just to collect more buzzwords, but making
+              sure the foundation is solid enough that everything I add on top
+              of it actually sticks. From there, I plan to gradually expand into
+              the broader toolkit that modern web development is built on,
+              moving at a pace that lets each new layer genuinely connect to
+              what I already know, rather than learning things in isolation. I
+              don't believe in locking in a rigid, step-by-step plan years in
+              advance. The tools and technologies I'll end up learning next will
+              depend on what excites me, what I'm building, and what the
+              projects in front of me actually demand — not a fixed checklist
+              written today. Plans like that tend to look good on paper and fall
+              apart the moment reality gets more interesting than the plan. I'd
+              rather stay responsive to where the work actually takes me. What
+              matters more to me than any specific sequence of technologies is
+              staying consistent — building things regularly, hitting real
+              problems, getting stuck, figuring my way out, and letting that
+              process shape what I learn next. I've noticed that the skills that
+              stuck with me the most weren't the ones I studied because a
+              roadmap told me to; they were the ones I needed in the middle of
+              building something I actually cared about finishing. So if there's
+              one constant in how I think about where this is headed, it's that
+              the clearest roadmap isn't the one you draw before you start —
+              it's the one that takes shape as you keep moving, built one real
+              project and one real problem at a time.
+            </span>
+          </div>
+        </div>
+        <!-- finish main-self -->
+
+        <!-- about card project and ... -->
+        <div class="Experience-container">
+          <div class="box-container">
+
+            <div class="box-Language">
+              <span class="title-box"> Things I need to learn </span>
+
+              <div class="techstack-container-new">
+                <a href="" class="link-tech">
+                  <div class="tech-tailwind">
+                    <img
+                      class="icon-techstack-tailwind"
+                      src="assets/icon-tech/icons8-tailwind-css-48.png"
+                      alt=""
+                    />
+                    <span class="text-tech-tailwind"> Tailwind CSS </span>
+                  </div>
+                </a>
+
+                <a href="" class="link-tech">
+                  <div class="tech-react">
+                    <img
+                      class="icon-techstack"
+                      src="assets/icon-tech/icons8-react-40.png"
+                      alt=""
+                    />
+                    <span class="text-tech"> React </span>
+                  </div>
+                </a>
+
+                <a href="" class="link-tech">
+                  <div class="tech-vuejs">
+                    <img
+                      class="icon-techstack"
+                      src="assets/icon-tech/icons8-vuejs-48.png"
+                      alt=""
+                    />
+                    <span class="text-tech"> Vue.js </span>
+                  </div>
+                </a>
+
+                <a href="" class="link-tech">
+                  <div class="tech-angular">
+                    <img
+                      class="icon-techstack"
+                      src="assets/icon-tech/icons8-angular-24.png"
+                      alt=""
+                    />
+                    <span class="text-tech"> Angular </span>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="div-experience">
+              <div class="box-TechStack">
+                <span class="title-box"> Tech Stack </span>
+
+                <div class="techstack-container">
+                  <a href="" class="link-tech">
+                    <div class="tech-html">
+                      <img
+                        class="icon-techstack"
+                        src="assets/icon-tech/icons8-html-48.png"
+                        alt=""
+                      />
+                      <span class="text-tech"> HTML </span>
+                    </div>
+                  </a>
+                  <a href="" class="link-tech">
+                    <div class="tech-css">
+                      <img
+                        class="icon-techstack"
+                        src="assets/icon-tech/icons8-css-48.png"
+                        alt=""
+                      />
+                      <span class="text-tech"> CSS </span>
+                    </div>
+                  </a>
+                  <a href="" class="link-tech">
+                    <div class="tech-js">
+                      <img
+                        class="icon-techstack-js"
+                        src="assets/icon-tech/icons8-javascript-48.png"
+                        alt=""
+                      />
+                      <span class="text-tech-js"> JAVA SCRIPT </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+
+              <div class="box-Socials">
+                <span class="title-box"> Socials </span>
+
+                <div class="media-container">
+                  <a
+                    class="link-media"
+                    href="https://www.facebook.com/profile.php?id=61595167868610"
+                  >
+                    <div class="media-facebook">
+                      <img src="assets/icon-media/facebook.png" alt="" />
+                      <span class="text-media">Facebook</span>
+                    </div>
+                  </a>
+
+                  <a
+                    class="link-media"
+                    href="https://github.com/MahanJafari138"
+                  >
+                    <div class="media-github">
+                      <img src="assets/icon-media/github.png" alt="" />
+                      <span class="text-media"> GitHub </span>
+                    </div>
+                  </a>
+
+                  <a class="link-media" href="mailto:mr.mahanoffice@gmail.com">
+                    <div class="media-gmail">
+                      <img src="assets/icon-media/gmail.png" alt="" />
+                      <span class="text-media"> Gmail </span>
+                    </div>
+                  </a>
+
+                  <a
+                    class="link-media"
+                    href="https://www.instagram.com/mj_oregan_87/"
+                  >
+                    <div class="media-instagram">
+                      <img src="assets/icon-media/insta.png" alt="" />
+                      <span class="text-media"> Instagram </span>
+                    </div>
+                  </a>
+
+                  <a
+                    class="link-media"
+                    href="https://www.linkedin.com/in/mahan-jafari-292697428/?isSelfProfile=true"
+                  >
+                    <div class="media-linkdin">
+                      <img src="assets/icon-media/linkdin.png" alt="" />
+                      <span class="text-media"> LinkedIn </span>
+                    </div>
+                  </a>
+
+                  <a class="link-media" href="">
+                    <div class="media-twich">
+                      <img src="assets/icon-media/twich.png" alt="" />
+                      <span class="text-media"> Twitch </span>
+                    </div>
+                  </a>
+
+                  <a class="link-media" href="https://x.com/Mahan8709">
+                    <div class="media-x">
+                      <img src="assets/icon-media/x.png" alt="" />
+                      <span class="text-media"> X </span>
+                    </div>
+                  </a>
+
+                  <a class="link-media" href="">
+                    <div class="media-Youtube">
+                      <img src="assets/icon-media/youtub.png" alt="" />
+                      <span class="text-media"> YouTube </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="sliderWeb-container" id="sliderWeb">
+              <img class="img-website" id="posterWeb" src="" alt="" />
+              <div class="aboutWeb-container" id="aboutWeb"></div>
+            </div>
+            
+          </div>
+        </div>
+      <!-- finish about -->
+    </div>
+
+    <!-- script -->
+    <script src="assets/js/sliderself.js"></script>
+    <script src="assets/js/ShopList.js"></script>
+    <!-- Js -->
+  </body>
+</html>

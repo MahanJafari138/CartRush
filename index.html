@@ -1,0 +1,1426 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Here Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- I added these fonts from the website. https://fonts.google.com/ -->
+
+    <link rel="stylesheet" href="assets/css/all-code.css" />
+    
+    <title>CartRush</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <nav class="search-container">
+        <div class="category-container">
+          <a class="text-nav-active" href="index.html">Home</a>
+          <a class="text-nav" href="Aboutme.html"> About Me </a>
+          <a class="text-nav" href="Games.html">Games</a>
+        </div>
+
+        <div class="search-flex">
+          <input
+            class="input-style"
+            id="searchInput"
+            type="search"
+            placeholder="Search Your Game"
+          />
+          <img class="icon-search" src="assets/icon/icons8-search.svg" alt="" />
+        </div>
+
+        <a href="ShoppingCart.html">
+          <div class="shopping-container">
+            <img
+              class="icon-shopping"
+              src="assets/icon/icons8-shopping-cart-50.png"
+              alt=""
+            />
+
+            <span class="Number-value-List" id="productQuantity">0</span>
+          </div>
+        </a>
+      </nav>
+      <!-- nav finish -->
+
+      <!-- main shop -->
+      <div class="main-container">
+        <div class="animate-scroll" id="scrollSlider">
+          <img class="img-Game-poster" id="sliderImg" src="" alt="" />
+          <div class="about-poster" id="allDescription"></div>
+
+          <button class="button-next" id="nextSlider">
+            <img class="icon-next" src="assets/icon/right-arrows.png" alt="" />
+          </button>
+
+          <button class="button-prev" id="prevSlider">
+            <img
+              class="icon-prev"
+              src="assets/icon/icons8-prev-50.png"
+              alt=""
+            />
+          </button>
+        </div>
+
+        <div class="description">
+          <p class="description-style">
+            1. The CartRush website is intended solely for browsing and checking
+            prices; you cannot purchase any games from this site.
+          </p>
+          <p class="description-style">
+            2. CartRush is a personal site created for practice purposes; I
+            would appreciate your support wherever you come across this message.
+          </p>
+
+          <p class="description-style">
+            3. I am very interested in this project because I have freed up my
+            time to design the most complete version for myself.
+          </p>
+        </div>
+      </div>
+      <!-- finish main shop -->
+
+      <!-- CartGame list -->
+      <div class="main-all" id="mainAll">
+        <div class="main-shop">
+          <div class="shop-container-off" id="searchBox">
+            <a class="title-shop" href="" id="resultText"></a>
+
+            <div class="cart-shop">
+              <div class="cart-container" id="cardBox"></div>
+            </div>
+          </div>
+
+          <div class="shop-container">
+            <a class="title-shop" href="">
+              <h2>New Game</h2>
+            </a>
+
+            <div class="cart-shop">
+              <div class="cart-container">
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Alien isolation2.jpg"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Alien: Isolation 2 </span>
+                    <div class="row-text">
+                      <span class="text-off"> $87 </span>
+
+                      <span class="basePrice"> $40 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/SILENT HILL Townfall.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      SILENT HILL: Townfall
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $159 </span>
+
+                      <span class="basePrice"> $100 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Halo Campaign Evolved.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      Halo: Campaign Evolved
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $69 </span>
+
+                      <span class="basePrice"> $0 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/CONTROL Resonant.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> CONTROL Resonant </span>
+                    <div class="row-text">
+                      <span class="text-off"> $100 </span>
+
+                      <span class="basePrice"> $58 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Onimusha Way of the Sword.jpg"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      Onimusha: Way of the Sword
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $120 </span>
+
+                      <span class="basePrice"> $76 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/The Blood of Dawnwalker.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      The Blood of Dawnwalker
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $120 </span>
+
+                      <span class="basePrice"> $110 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Resonance A Plague Tale Legacy.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      Resonance: A Plague Tale Legacy
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $190 </span>
+
+                      <span class="basePrice"> $85 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/STAR WARS Zero Company™.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      STAR WARS Zero Company™
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $72 </span>
+
+                      <span class="basePrice"> $50 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Dragon's Dogma 2 Dark Arisen.jpg"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style">
+                      Dragon's Dogma 2: Dark Arisen
+                    </span>
+                    <div class="row-text">
+                      <span class="text-off"> $30 </span>
+
+                      <span class="basePrice"> $10 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Silver Pines.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Silver Pines </span>
+                    <div class="row-text">
+                      <span class="text-off"> $100 </span>
+
+                      <span class="basePrice"> $90 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Sea of Remnants.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Sea of Remnants </span>
+                    <div class="row-text">
+                      <span class="text-off"> $77 </span>
+
+                      <span class="basePrice"> $56 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Honkai Star Rail.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Honkai: Star Rail </span>
+                    <div class="row-text">
+                      <span class="text-off"> $10 </span>
+
+                      <span class="basePrice"> $0 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/PRAGMATA.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> PRAGMATA </span>
+                    <div class="row-text">
+                      <span class="text-off"> $139 </span>
+
+                      <span class="basePrice"> $107 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Marvel Rivals.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Marvel Rivals </span>
+                    <div class="row-text">
+                      <span class="text-off"> $0 </span>
+
+                      <span class="basePrice"> $0 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+
+                <div class="card-shadow">
+                  <img
+                    class="poster-card"
+                    src="assets/img-card/Dune Awakening.png"
+                    alt=""
+                  />
+
+                  <div class="poster-hover-off">
+                    <span class="poster-name-style"> Dune: Awakening </span>
+                    <div class="row-text">
+                      <span class="text-off"> $43 </span>
+
+                      <span class="basePrice"> $22 </span>
+                    </div>
+                    <button class="click-Buy">Buy It</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <a class="title-shop" href=""><h2>Trend Game</h2></a>
+
+          <div class="cart-shop">
+            <div class="cart-container">
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/EA SPORTS FC™ 27.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> EA SPORTS FC™ 27 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $102 </span>
+
+                    <span class="basePrice"> $79 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Zenless Zone Zero.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Zenless Zone Zero </span>
+                  <div class="row-text">
+                    <span class="text-off"> $30 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Where Winds Meet.jpg"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Where Winds Meet </span>
+                  <div class="row-text">
+                    <span class="text-off"> $77 </span>
+
+                    <span class="basePrice"> $53 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/007 First Light.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> 007 First Light </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $98 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/HAUNTED STREAMER.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> HAUNTED STREAMER </span>
+                  <div class="row-text">
+                    <span class="text-off"> $90 </span>
+
+                    <span class="basePrice"> $54 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/The Witcher 3 Wild Hunt — Songs of the Past.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    The Witcher 3: Wild Hunt — Songs of the Past
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $120 </span>
+
+                    <span class="basePrice"> $100 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Nodusfall.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Nodusfall </span>
+                  <div class="row-text">
+                    <span class="text-off"> $164 </span>
+
+                    <span class="basePrice"> $120 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Tom Clancy’s Rainbow Six Tactics.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Tom Clancy’s Rainbow Six Tactics
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $66 </span>
+
+                    <span class="basePrice"> $46 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Genshin Impact.png"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Genshin Impact </span>
+                  <div class="row-text">
+                    <span class="text-off"> $12 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img-card/Total Football Online.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Total Football Online </span>
+                  <div class="row-text">
+                    <span class="text-off"> $24 </span>
+
+                    <span class="basePrice"> $12 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <a class="title-shop" href=""><h2>Action Game</h2></a>
+
+          <div class="cart-shop">
+            <div class="cart-container">
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/CONTROL Resonant.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> CONTROL Resonant </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $58 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Hunt Showdown 1896.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Hunt: Showdown 1896 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $110 </span>
+
+                    <span class="basePrice"> $105 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Minecraft Dungeons II.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Minecraft Dungeons II </span>
+                  <div class="row-text">
+                    <span class="text-off"> $38 </span>
+
+                    <span class="basePrice"> $31 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/ACE COMBAT 8 WINGS OF THEVE.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    ACE COMBAT 8: WINGS OF THEVE
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $98 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/METAL GEAR SOLID MASTER COLLECTION Vol.2.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    METAL GEAR SOLID: MASTER COLLECTION Vol.2
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $90 </span>
+
+                    <span class="basePrice"> $78 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Street Fighter™ 6.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Street Fighter™ 6 </span>
+                  <div class="row-text">
+                    <span class="text-off"> $120 </span>
+
+                    <span class="basePrice"> $70 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/LumenTale Memories of Trey.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    LumenTale: Memories of Trey
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $50 </span>
+
+                    <span class="basePrice"> $25 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Bohemia Interactive.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Bohemia Interactive Nailcrown
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $95 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Fable.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Fable </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $84 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-action/Gallipoli.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Gallipoli </span>
+                  <div class="row-text">
+                    <span class="text-off"> $130 </span>
+
+                    <span class="basePrice"> $122 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="shop-container">
+          <a class="title-shop-Horror" href=""><h2>Horror Game</h2></a>
+
+          <div class="cart-shop">
+            <div class="cart-container">
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Drowned Lake.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Drowned Lake </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $88 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/SKINFACE.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> SKINFACE </span>
+                  <div class="row-text">
+                    <span class="text-off"> $110 </span>
+
+                    <span class="basePrice"> $91 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/The Midnight Barber.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> The Midnight Barber </span>
+                  <div class="row-text">
+                    <span class="text-off"> $92 </span>
+
+                    <span class="basePrice"> $71 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Hillthorn.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Hillthorn </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $92 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Cronos Lazarus.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Cronos: Lazarus </span>
+                  <div class="row-text">
+                    <span class="text-off"> $90 </span>
+
+                    <span class="basePrice"> $66 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Reap and Rush.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Reap and Rush </span>
+                  <div class="row-text">
+                    <span class="text-off"> $120 </span>
+
+                    <span class="basePrice"> $98 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/SAW Genesis.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> SAW: Genesis </span>
+                  <div class="row-text">
+                    <span class="text-off"> $50 </span>
+
+                    <span class="basePrice"> $38 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Fathoms.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style"> Fathoms </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $95 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/Into the Dead Our Darkest Days.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    Into the Dead: Our Darkest Days
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $100 </span>
+
+                    <span class="basePrice"> $84 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+
+              <div class="card-shadow">
+                <img
+                  class="poster-card"
+                  src="assets/img/img-Horror/SOMBRAS negative frames.webp"
+                  alt=""
+                />
+
+                <div class="poster-hover-off">
+                  <span class="poster-name-style">
+                    SOMBRAS: negative frames
+                  </span>
+                  <div class="row-text">
+                    <span class="text-off"> $40 </span>
+
+                    <span class="basePrice"> $0 </span>
+                  </div>
+                  <button class="click-Buy">Buy It</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- CartGame list -->
+      <!-- main shop & card finish -->
+
+      <!-- start the footer -->
+      <div class="footer-container">
+        <div class="top-day">
+          <h2 class="title-topDay">Top Day</h2>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-1.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/SKINFACE.webp"
+              alt=""
+            />
+            <span class="text-footer"> SKINFACE </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-2.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Alien isolation2.jpg"
+              alt=""
+            />
+            <span class="text-footer"> Alien: Isolation 2 </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-3.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/007 First Light.png"
+              alt=""
+            />
+            <span class="text-footer"> 007 First Light </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-4.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/EA SPORTS FC™ 27.png"
+              alt=""
+            />
+            <span class="text-footer"> EA SPORTS FC™ 27 </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-5.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Halo Campaign Evolved.png"
+              alt=""
+            />
+            <span class="text-footer"> Halo: Campaign Evolved </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-6.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Genshin Impact.png"
+              alt=""
+            />
+            <span class="text-footer"> Genshin Impact </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-7.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/CONTROL Resonant.webp"
+              alt=""
+            />
+            <span class="text-footer"> CONTROL Resonant </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-8.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/Gallipoli.webp"
+              alt=""
+            />
+            <span class="text-footer"> Gallipoli </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-9.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Dragon's Dogma 2 Dark Arisen.jpg"
+              alt=""
+            />
+            <span class="text-footer"> Dragon's Dogma 2: Dark Arisen </span>
+          </div>
+
+          <div class="card-footer-day">
+            <img
+              class="img-number"
+              src="assets/icon-number-day/circle-10.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Marvel Rivals.png"
+              alt=""
+            />
+            <span class="text-footer"> Marvel Rivals </span>
+          </div>
+        </div>
+
+        <div class="top-week">
+          <h2 class="title-topWeek">Top Week</h2>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-1.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/SKINFACE.webp"
+              alt=""
+            />
+            <span class="text-footer"> SKINFACE </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-2.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Alien isolation2.jpg"
+              alt=""
+            />
+            <span class="text-footer"> Alien: Isolation 2 </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-3.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/EA SPORTS FC™ 27.png"
+              alt=""
+            />
+            <span class="text-footer"> EA SPORTS FC™ 27 </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-4.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Genshin Impact.png"
+              alt=""
+            />
+            <span class="text-footer"> Genshin Impact </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-5.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Honkai Star Rail.png"
+              alt=""
+            />
+            <span class="text-footer"> Honkai: Star Rail </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-6.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/CONTROL Resonant.webp"
+              alt=""
+            />
+            <span class="text-footer"> CONTROL Resonant </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-7.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/Minecraft Dungeons II.webp"
+              alt=""
+            />
+            <span class="text-footer"> Minecraft Dungeons II </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-8.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/Street Fighter™ 6.webp"
+              alt=""
+            />
+            <span class="text-footer"> Street Fighter™ 6 </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-9.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/SOMBRAS negative frames.webp"
+              alt=""
+            />
+            <span class="text-footer"> SOMBRAS: negative frames </span>
+          </div>
+
+          <div class="card-footer-week">
+            <img
+              class="img-number"
+              src="assets/icon-number-week/circle-purple-10.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/The Midnight Barber.webp"
+              alt=""
+            />
+            <span class="text-footer"> The Midnight Barber </span>
+          </div>
+        </div>
+
+        <div class="top-month">
+          <h2 class="title-topMonth">Top Month</h2>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-1.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/EA SPORTS FC™ 27.png"
+              alt=""
+            />
+            <span class="text-footer"> EA SPORTS FC™ 27 </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-2.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Genshin Impact.png"
+              alt=""
+            />
+            <span class="text-footer"> Genshin Impact </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-3.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/HAUNTED STREAMER.webp"
+              alt=""
+            />
+            <span class="text-footer"> HAUNTED STREAMER </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-4.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/Hillthorn.webp"
+              alt=""
+            />
+            <span class="text-footer"> Hillthorn </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-5.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-Horror/The Midnight Barber.webp"
+              alt=""
+            />
+            <span class="text-footer"> The Midnight Barber </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-6.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Halo Campaign Evolved.png"
+              alt=""
+            />
+            <span class="text-footer"> Halo: Campaign Evolved </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-7.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img/img-action/METAL GEAR SOLID MASTER COLLECTION Vol.2.webp"
+              alt=""
+            />
+            <span class="text-footer">
+              METAL GEAR SOLID: MASTER COLLECTION Vol.2
+            </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-8.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Honkai Star Rail.png"
+              alt=""
+            />
+            <span class="text-footer"> Honkai: Star Rail </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-9.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Marvel Rivals.png"
+              alt=""
+            />
+            <span class="text-footer"> Marvel Rivals </span>
+          </div>
+
+          <div class="card-footer-month">
+            <img
+              class="img-number"
+              src="assets/icon-number-month/circle-violet-10.svg"
+              alt=""
+            />
+            <img
+              class="img-footer"
+              src="assets/img-card/Zenless Zone Zero.png"
+              alt=""
+            />
+            <span class="text-footer"> Zenless Zone Zero </span>
+          </div>
+        </div>
+      </div>
+      <!-- finish the footer -->
+    </div>
+    <!-- finally container finish -->
+
+    <!-- script -->
+    <script src="assets/js/slider.js"></script>
+    <script src="assets/js/overlay.js"></script>
+    <script src="assets/js/searchvalue.js"></script>
+    <script src="assets/js/ShopList.js"></script>
+    <!-- script -->
+  </body>
+</html>

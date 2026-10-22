@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Here Link for font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- I added these fonts from the website. https://fonts.google.com/ -->
+
+    <link rel="stylesheet" href="assets/css/all-code.css" />
+
+    <title>CartRush</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- nav -->
+      <nav class="search-container">
+        <div class="category-container">
+          <a class="text-nav" href="index.html">Home</a>
+          <a class="text-nav" href="Aboutme.html"> About Me </a>
+          <a class="text-nav" href="Games.html">Games</a>
+        </div>
+
+        <div class="search-flex">
+          <input
+            class="input-style"
+            type="search"
+            placeholder="Search Your Game"
+          />
+          <img class="icon-search" src="assets/icon/icons8-search.svg" alt="" />
+        </div>
+
+        <a href="ShoppingCart.html">
+          <div class="shopping-container-active">
+            <img
+              class="icon-shopping"
+              src="assets/icon/icons8-shopping-cart-50.png"
+              alt=""
+            />
+
+            <span class="Number-value-List" id="productQuantity">0</span>
+          </div>
+        </a>
+      </nav>
+      <!-- nav finish -->
+
+      <!-- start List Product -->
+        <div class="shopcart-container">
+          <div class="shopcart-grid">
+            <div class="box-cart">
+              <span class="title-cartBox"> Cart </span>
+
+              <div class="div-CartShop-List">
+                <div class="cartShop-List" id="cartList"></div>
+              </div>
+            </div>
+
+            <div class="box-price">
+              <span class="text-PriceCart"> Shopping Cart </span>
+
+              <div class="columns-List">
+                <div class="row-totalPrice">
+                  <span class="Price-text"> Total: </span>
+
+                  <span class="Price-text" id="finalPrice"> $0 </span>
+                </div>
+
+                <div class="row-totalPrice">
+                  <span class="Price-text"> Product Quantity: </span>
+
+                  <span class="Price-text" id="productCount"> 0 </span>
+                </div>
+              </div>
+
+              <button class="buy-Product">Buy It</button>
+            </div>
+          </div>
+        <!-- finish list Product  -->
+
+        <!-- start Description -->
+        <div class="about-ShoppingCart">
+          <span class="title-aboutshop"> About the Sales Page </span>
+
+          <div class="div-Description">
+            <p class="Description-shopCart">
+              1. This website was created as a portfolio showcase; no buying or
+              selling takes place here.
+            </p>
+
+            <p class="Description-shopCart">
+              2. We would appreciate it if you could fully test the site and let
+              us know via social media if you encounter any issues.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- finish Description  -->
+
+    <!-- Java Script Brooooooooo -->
+    <script src="assets/js/ShopList.js"></script>
+    <!-- finish -->
+  </body>
+</html>
