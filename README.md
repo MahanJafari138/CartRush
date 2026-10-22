@@ -24,4 +24,4 @@ HTML5, CSS3 (Grid, Flexbox, conic-gradient, View Transitions), JavaScript (ES6+,
 - Building and debugging a larger multi-page project
 
 ## Project Info
-Fourth full-scale vanilla JS project, built over 21 days (5 Mehr – 26 Mehr 1405).
+Fourth full-scale vanilla JS project, built over 25 days (5 Mehr – 30 Mehr 1405).
