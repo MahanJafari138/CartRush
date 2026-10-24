@@ -1,27 +1,26 @@
 # CartRush
 
-A multi-page game price-checking website built entirely with vanilla HTML, CSS, and JavaScript. CartRush is a practice project: you can browse games, search live prices, and manage a cart, but no real purchases take place.
+CartRush is a game price-checking website built with HTML, CSS and JavaScript, without any framework. It is a practice project: games can be browsed and added to a cart, but no real purchase takes place.
+
+Live demo: [https://mahanjafari138.github.io/CartRush/]
 
 ## Features
-- **Live search** powered by the CheapShark API, with debounced input, async/await, URL encoding, dynamically generated cards, and handling of outdated responses, empty results, and network errors
-- **Home page** with an autoplay poster slider (10 games, next/prev buttons, pause on hover) and four categorized sections: New, Trend, Action, and Horror
-- **Games page** with a full catalog of games
-- **Hover overlays** on every card showing name, original price, sale price, and a Buy button, including for cards created dynamically from search results (via event delegation)
-- **Shopping cart** with add/remove, live item counter in the navbar, total price calculation, and persistence through LocalStorage
-- **Top Day / Week / Month** ranking section
-- **About Me page** with an auto-sliding showcase of my previous projects
-- **Smooth page transitions** using the View Transitions API
-- **Responsive design** across multiple breakpoints, from desktop to small mobile screens
+- Live game search using the CheapShark API
+- Autoplay slider with next and previous buttons
+- Game cards that show the name, original price and sale price on hover
+- Shopping cart saved with LocalStorage, with item count and total price
+- Top Day, Top Week and Top Month lists
+- About page with my previous projects
+- Page transitions and a responsive layout
 
-## Tech Stack
-HTML5, CSS3 (Grid, Flexbox, conic-gradient, View Transitions), JavaScript (ES6+, Fetch API, LocalStorage, DOM manipulation)
+## Pages
+- Home
+- Games
+- About Me
+- Shopping Cart
 
-## What I Practiced
-- Working with a real external API and handling race conditions
-- State + render patterns (currentIndex slider)
-- Event delegation for dynamically created elements
-- Persisting and restoring app state with LocalStorage
-- Building and debugging a larger multi-page project
+## Technologies
+HTML, CSS, JavaScript (Fetch API, LocalStorage)
 
-## Project Info
-Fourth full-scale vanilla JS project, built over 25 days (5 Mehr – 30 Mehr 1405).
+## About the project
+This is my fourth project with vanilla JavaScript. I built it in 25 days.
